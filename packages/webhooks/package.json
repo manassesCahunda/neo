@@ -1,0 +1,15 @@
+{
+  "name": "@neo/webhooks",
+  "main": "./index.ts",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@neo/env": "workspace:*",
+    "@neo/auth": "workspace:*",
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*",
+    "@neo/supabase": "workspace:*",
+    "@neo/qstash": "workspace:*"
+  }
+}

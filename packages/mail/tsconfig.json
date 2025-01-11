@@ -1,0 +1,8 @@
+{
+  "extends": "@neo/tsconfig/base.json",
+  "include": ["."],
+  "compilerOptions": {
+      "jsx": "react", 
+  },
+  "exclude": ["dist", "build", "node_modules"]
+}

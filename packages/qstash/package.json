@@ -1,0 +1,11 @@
+{
+  "name": "@neo/qstash",
+  "main": "./index.ts",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@upstash/qstash": "^2.7.14",
+    "@neo/env": "workspace:*"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@neo/winston",
+  "dependencies": {
+    "winston": "^3.15.0"
+  }
+}

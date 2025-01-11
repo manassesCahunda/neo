@@ -1,0 +1,18 @@
+o trigger.dev 
+funcionamento usar os acionadore de eventos , webhook,
+ api call para adiconar um jbs a fila(queue)
+de execusao quando adicionado ele executodo segundo 
+as propreiedades passadas a es jobs tempo de execusao de startime , timeout , retry ,
+
+quanto workers to criars uma jobs e ele e exportado  
+ dentro do trigger.config.s deve esta pasad as paasta aonde os teus 
+jobs se encontra para aqunado adionado ele vai a cionar a execusao
+do job segundo os parametros passados neste job
+
+por padrao ele ja usa  o sistema :
+First in First out
+Round Robin 
+backOff
+retry
+concurreykey para que o mesmo job executado posso ser  executado 
+por diferente clientes

@@ -1,0 +1,15 @@
+{
+  "name": "@neo/auth",
+  "main": "./index.ts",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@neo/bcrypt": "workspace:*",
+    "@neo/drizzle": "workspace:*",
+    "@neo/env": "workspace:*",
+    "@neo/firebase": "workspace:*",
+    "@neo/supabase": "workspace:*",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@neo/openai",
+  "main": "./index.ts",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@neo/env": "workspace:*",
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*",
+    "openai": "^4.67.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@neo/eslint-config/lib"
+    ]
+  },
+  "prettier": "@neo/prettier"
+}

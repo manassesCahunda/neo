@@ -1,0 +1,26 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "lint .",
+    "dev": "tsx watch index.ts  --turbo"
+  },
+  "dependencies": {
+    "@neo/mail": "workspace:*",
+    "@neo/socket": "workspace:*",
+    "@neo/wppconnect": "workspace:*",
+    "@neo/winston": "workspace:*",
+    "@neo/auth": "workspace:*",
+    "@neo/trigger": "workspace:*",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*",
+    "@types/node": "^20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.6",
+    "tsx": "^4.19.1",
+    "typescript": "^5"
+  }
+}

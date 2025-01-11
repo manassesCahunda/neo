@@ -1,0 +1,30 @@
+{
+  "name": "@neo/trpc",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@neo/tsconfig": "workspace:*",
+    "@neo/eslint-config": "workspace:*"
+  },
+  "dependencies": {
+    "@neo/drizzle": "workspace:*",
+    "@neo/bcrypt": "workspace:*",
+    "@neo/otp": "workspace:*",
+    "@neo/env": "workspace:*",
+    "@neo/mail": "workspace:*",
+    "@neo/supabase": "workspace:*",
+    "@neo/firebase": "workspace:*",
+    "@neo/trigger": "workspace:*",
+    "@neo/auth": "workspace:*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": ["@neo/eslint-config/lib"]
+  },
+  "prettier": "@neo/prettier"
+}

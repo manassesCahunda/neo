@@ -1,0 +1,23 @@
+{
+  "name": "@neo/firebase",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*",
+    "@types/node": "20.4.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@neo/eslint-config/lib"
+    ]
+  },
+  "dependencies": {
+    "firebase": "^10.14.0",
+    "firebase-admin": "^12.6.0"
+  }
+}

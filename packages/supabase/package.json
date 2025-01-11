@@ -1,0 +1,22 @@
+{
+  "name": "@neo/supabase",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@neo/env": "workspace:*",
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@neo/eslint-config/lib"
+    ]
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

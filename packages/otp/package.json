@@ -1,0 +1,10 @@
+{
+  "name": "@neo/otp",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@neo/firebase": "workspace:*",
+    "speakeasy": "^2.0.0"
+  }
+}

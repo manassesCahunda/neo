@@ -1,0 +1,6 @@
+PM2 - GERNECIAR O APLICAIVO
+
+TRIGGER - PARA EXECUTAR TARFAS  SEGUNDO PLANO
+
+4. Testes
+Execução de testes automatizados: Integra-se com frameworks de teste como Mocha, Jasmine ou QUnit para rodar testes de unidade ou integração. Exemplo: grunt-contrib-qunit.

@@ -1,0 +1,9 @@
+{
+  "name": "@neo/bcrypt",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  }
+}

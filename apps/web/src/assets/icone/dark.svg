@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="298" height="302" viewBox="0 0 298 302" fill="none" stroke="none" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="SingleElement">
+    <path id="Rectangle" d="M263 0C282.333 0 298 15.6674 298 35L298 267C298 286.333 282.333 302 263 302L35 302C15.6674 302 0 286.333 0 267L0 35C0 15.6674 15.6674 0 35 0L263 0Z" style="fill:#000000;mix-blend-mode:normal;" />
+    <path id="Oval" d="M0.119629 0.00012207C0.0401611 1.6557 0 3.32166 0 4.99701C-6.10352e-05 61.6062 45.8907 107.497 102.5 107.497C159.109 107.497 205 61.6062 205 4.99695C205 3.32166 204.96 1.6557 204.88 0L0.119629 0.00012207Z" style="fill:#FFFFFF;fill-rule:evenodd;mix-blend-mode:normal;" transform="matrix(0.643 -0.766 0.766 0.643 75.44 222)" />
+  </g>
+</svg>

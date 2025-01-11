@@ -1,0 +1,27 @@
+{
+  "name": "@neo/trigger",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "dependencies": {
+    "@neo/env": "workspace:*",
+    "@neo/socket": "workspace:*",
+    "@neo/auth": "workspace:*",
+    "@neo/eslint-config": "workspace:*",
+    "@neo/tsconfig": "workspace:*",
+    "@neo/openai": "workspace:*",
+    "@neo/mail": "workspace:*",
+    "@neo/firebase": "workspace:*",
+    "@neo/supabase": "workspace:*",
+    "@neo/qstash": "workspace:*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@neo/eslint-config/lib"
+    ]
+  },
+  "prettier": "@neo/prettier"
+}
