@@ -18,10 +18,12 @@ import {
 import { useUserData } from '@/hooks/userDate';
 import { deleteSession } from "@/action/deleteSession";
 import { AlertDemo } from './toast';
+import {  useRouter } from "next/navigation";
 
 export function UserNav() {
   const { user, isLoading, isError, error } = useUserData();
   const [alerts, setAlerts] = useState<any[]>([]);
+  const router = useRouter();
 
   const onLogout = async () => {
     try {
@@ -31,7 +33,7 @@ export function UserNav() {
         { id: Date.now(), message: { title: 'Sessão finalizada', description: 'Você saiu com sucesso.' }, isLoading: false },
       ]);
 
-      window.location.href="/inbox";
+      router.push("/inbox");
 
     } catch (err) {
       setAlerts((prev) => [
