@@ -10,8 +10,9 @@ export async function middleware(request: NextRequest) {
     const sessionId = request.cookies.get('sessionId')?.value || null;
    
     const isPublic = pathname.includes("/auth");
+    const isApi = pathname.includes("/api");
 
-         
+    
     if (token && refreshToken && sessionId) {
         if (isPublic) {
             return NextResponse.redirect(new URL('/inbox', request.url));
@@ -23,10 +24,10 @@ export async function middleware(request: NextRequest) {
     }
 
     if (!token && !refreshToken && !sessionId) {
-        if (!pathname.startsWith('/auth')) {
+        if (!isPublic) {
             return NextResponse.redirect(new URL('/auth', request.url));
         }
-        if(!pathname.startsWith('/api')) {
+        if(isApi) {
             return NextResponse.redirect(new URL('/auth', request.url));
         }
         if(pathname === '/'){
