@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "lint .",
-    "dev": "tsx watch index.ts  --turbo"
+    "dev": "tsx watch index.ts  --turbo",
+    "start": "tsx watch index.ts  --turbo"
   },
   "dependencies": {
     "@neo/mail": "workspace:*",
