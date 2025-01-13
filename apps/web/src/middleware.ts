@@ -17,9 +17,6 @@ export async function middleware(request: NextRequest) {
         if (isPublic) {
             return NextResponse.redirect(new URL('/inbox', request.url));
         }
-        if(pathname === '/'){
-            return NextResponse.redirect(new URL('/inbox', request.url));
-        }
 
     }
 
@@ -28,9 +25,6 @@ export async function middleware(request: NextRequest) {
             return NextResponse.redirect(new URL('/auth', request.url));
         }
         if(isApi) {
-            return NextResponse.redirect(new URL('/auth', request.url));
-        }
-        if(pathname === '/'){
             return NextResponse.redirect(new URL('/auth', request.url));
         }
     }
