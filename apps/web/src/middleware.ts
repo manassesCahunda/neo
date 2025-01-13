@@ -12,6 +12,9 @@ export async function middleware(request: NextRequest) {
     const isPublic = pathname.includes("/auth");
     const isApi = pathname.includes("/api");
 
+    if (pathname === '/') {
+        return NextResponse.redirect(new URL('/auth', request.url));
+    }
     
     if (token && refreshToken && sessionId) {
         if (isPublic) {
