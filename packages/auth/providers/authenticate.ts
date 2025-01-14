@@ -475,10 +475,6 @@ export const Adapter = {
             .where(eq(webhooks.userId, userId))
             .execute();
         
-          if (getAll.length === 0) {
-            throw new Error('No webhooks found for the provided userId.');
-          }
-        
           return getAll;
         } ,
         /**
