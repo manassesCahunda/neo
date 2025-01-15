@@ -7,14 +7,18 @@ import { useEffect, useState } from 'react';
 import { DataTablePagination } from './pagination';
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
+  columns: ColumnDef<TData, TValue>[]; 
   data: TData[];
 }
 
 function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData, TValue>) {
   const search = useSearchParams();
   const [globalFilter, setGlobalFilter] = useState<string>('');
-  const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 3 });
+  const [pagination, setPagination] = useState({
+    pageIndex: parseInt(search.get('page') || '0', 10),
+    pageSize: parseInt(search.get('size') || '3', 10)
+  });
+  const [isDataValidated, setIsDataValidated] = useState(false);
 
   useEffect(() => {
     const query = search.get('query') || '';
